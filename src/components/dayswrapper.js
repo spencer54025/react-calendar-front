@@ -8,7 +8,7 @@ export default class DaysWrapper extends Component{
     render(){
         return(
             <div>
-                
+                <span>days</span>
             </div>
         )
     }
