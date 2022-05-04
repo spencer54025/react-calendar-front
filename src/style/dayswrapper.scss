@@ -1,0 +1,33 @@
+.week-setup {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    .day {
+    position: relative;
+    border: 1px solid $pink;
+    border-radius: 2px;
+    height: 100px;
+    width: 300px;
+    }
+    textarea {
+    background-color: inherit;
+    transition: 1s;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 55%;
+    width: 97%;
+    resize: none;
+    position: relative;
+    bottom: 0;
+    color: $pink;
+    font-size: 1em;
+
+    &:hover {
+        border: 3px solid $purple;
+    }
+    }
+    .day-overflow{
+        border: 1px solid $purple;
+        color: $purple;
+    }
+}
