@@ -1,16 +1,8 @@
 body {
     margin: 0px;
-    background-color: $blue;
+    background-color: $background;
     color: $pink;
     font-size: 1.5em;
-    font-family: 'Oswald', sans-serif;
-}
-
-.calendar-container {
-    h2{
-        text-align: center;
-    }
-    h3{
-        text-align: center;
-    }
+    font-family: 'BIZ UDPGothic', sans-serif;
+    height: 100vh;
 }

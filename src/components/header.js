@@ -3,7 +3,9 @@ import React from 'react'
 export default function Header (props) {
     return(
         <div className='header-wrapper'> 
-            <h2>{props.monthName}</h2>
+            {/* <button>&#8592;</button> */}
+            <h1>{props.monthName}</h1>
+            {/* <button>&#8594;</button> */}
         </div>
     )
 }

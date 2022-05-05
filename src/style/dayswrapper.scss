@@ -1,20 +1,26 @@
 .week-setup {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: space-between;
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+justify-content: space-between;
+
     .day {
     position: relative;
     border: 1px solid $pink;
     border-radius: 2px;
-    height: 100px;
-    width: 300px;
+    height: 125px;
+    width: 100%;
     }
+
+    .Date {
+    padding:10px;
+    }
+
     textarea {
     background-color: inherit;
     transition: 1s;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 5px;
-    height: 55%;
+    height: 70%;
     width: 97%;
     resize: none;
     position: relative;
@@ -22,10 +28,15 @@
     color: $pink;
     font-size: 1em;
 
-    &:hover {
-        border: 3px solid $purple;
+        &:hover {
+            border: 2px solid $purple;
+        }
+        &:focus{
+            outline: 0px;
+            border: 2px solid $purple;
+        }
     }
-    }
+
     .day-overflow{
         border: 1px solid $purple;
         color: $purple;

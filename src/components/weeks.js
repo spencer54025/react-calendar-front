@@ -17,7 +17,7 @@ export default function Weeks(props) {
             calendarBoxArray.push(<DaysWrapper key={`${props.month.id} - ${i}`} date={i} month={props.month} />)
         }
 
-        for (let i = 1; i <= 42 - props.month.days_in_month - props.month.start_day; i++) {
+        for (let i = 1; i <= 35 - props.month.days_in_month - props.month.start_day; i++) {
             calendarBoxArray.push(<DaysWrapper key={`N-${i}`} date={i} overflow />)
         }
 

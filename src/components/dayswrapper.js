@@ -61,10 +61,8 @@ export default class DayWrapper extends Component {
 		} else if (
 			this.state.reminderExists === true && this.state.textInput === ''
 		) {
-			fetch(`http://127.0.0.1:5000/reminder/delete/${this.props.month.id}/${this.props.date}`),
-			{
-				method: "DELETE"
-			}
+		fetch(`http://127.0.0.1:5000/reminder/delete/${this.props.month.id}/${this.props.date}`),
+		{ method: "DELETE", }
 			.then(response => response.json())
 			.then(data => {
 				console.log("deleted reminder", data)

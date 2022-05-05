@@ -31,6 +31,10 @@ export default class Calender extends Component {
         }
     }
 
+    handleMonthChange(direction) {
+        
+    }
+
     calculateDateData() {
         const now = new Date()
         const month = this.monthList[now.getMonth()]
