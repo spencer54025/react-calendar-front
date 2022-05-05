@@ -8,7 +8,7 @@ justify-content: space-between;
     border: 1px solid $pink;
     border-radius: 2px;
     height: 125px;
-    width: 100%;
+    width: 95%;
     }
 
     .Date {
@@ -28,6 +28,7 @@ justify-content: space-between;
     color: $pink;
     font-size: 1em;
 
+
         &:hover {
             border: 2px solid $purple;
         }
@@ -40,5 +41,12 @@ justify-content: space-between;
     .day-overflow{
         border: 1px solid $purple;
         color: $purple;
+        width: 95%;
+
+            textarea{
+            &:hover {
+                border: 2px solid transparent;
+            }
+        }
     }
 }

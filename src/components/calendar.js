@@ -29,10 +29,15 @@ export default class Calender extends Component {
             month: {},
             monthData: []
         }
+
+        this.handleMonthChange = this.handleMonthChange.bind(this)
     }
 
     handleMonthChange(direction) {
-        
+        const currentMonthIndex = this.monthList.indexOf(this.state.month.name)
+        const newMonthName = this.monthList[direction === 'next' ? currentMonthIndex + 1 : currentMonthIndex - 1]
+        const newMonthData = this.state.monthData.filter(month => month.name === newMonthName)[0]
+        this.setState({ month: newMonthData })
     }
 
     calculateDateData() {
@@ -62,7 +67,7 @@ export default class Calender extends Component {
         return(
             <div className='calendar-container'>
                 <h2>calendar by spencer</h2>
-                <Header monthName={this.state.month.name} />
+                <Header monthName={this.state.month.name} monthChanger={this.handleMonthChange} />
                 <Weeks month={this.state.month} />
                 <Footer year={this.state.month.year} />
             </div>
