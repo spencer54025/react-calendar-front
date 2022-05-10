@@ -48,7 +48,7 @@ export default class Calender extends Component {
     }
 
     componentDidMount() {
-        fetch('http://127.0.0.1:5000/months')
+        fetch('https://svp-calendar-api.herokuapp.com/months')
             .then((response) => response.json())
             .then((data) => {
                 console.log("API Data:", data),
